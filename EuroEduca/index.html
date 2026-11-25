@@ -4,82 +4,119 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>EuroEduca - Manual de procedimentos</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Plus+Jakarta+Sans:ital,wght@0,700;0,800;1,800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
+
+    <!-- CABEÇALHO UNIFICADO -->
     <header>
         <nav>
-            <h2><span>Euro</span>Educa</h2>
-            <ul>
-                <li>Início</li>
-                <li>Qualidade</li>
-                <li>Moradores</li>
-                <li>Prestadores de Serviços</li>
-                <li>Visitantes</li>
-                <li>Liberações</li>
-                <li>Ajuda</li>
-                <li>SAC</li>
-            </ul>
+            <a href="index.html" class="logo">
+                <span class="logo-icone">
+                    <span class="barra-preta"></span>
+                    <span class="barra-laranja"></span>
+                    <span class="barra-vermelha"></span>
+                </span>
+                <span class="logo-texto"><strong>Euro</strong>Educa</span>
+            </a>
+
+           <ul>
+    <li><a href="index.html">Início</a></li>
+    <li><a href="qualidade.html">Qualidade</a></li>
+    <li><a href="morador.html">Moradores</a></li>
+    <li><a href="prestador.html">Prestadores de Serviços</a></li>
+    <li><a href="entregas.html">Entregas</a></li>
+    <li><a href="visitante.html">Visitantes</a></li>
+    <li><a href="liberacoes.html">Liberações</a></li>
+    <li><a href="ajuda.html">Ajuda</a></li>
+    <li><a href="sac.html">SAC</a></li>
+</ul>
         </nav>
     </header>
-    <br>
 
-    <h1>Manual de Procedimentos Europort</h1>
-    <p>Protocolos de segurança, boas práticas para operação diária e atendimento com excelência.</p>
-    <button>Saiba Mais</button>
-    <br>
+    <main class="container">
 
-    <section class="valores">
-        <article class="proposito">
-            <h2>Propósito</h2>
-            <h4>Crescer, evoluir e contribuir</h4>
-            <p>Nosso compromisso é crescer constantemente, evoluir e contribuir ativamente 
-                para o sucesso de todos que caminham conosco. Acreditamos que, ao desenvolver 
-                pessoas, entregar valor com exelência e agir com propósito, geramos impacto 
-                positivo quye ultrapassa os muros da nossa empresa e transforma clientes, 
-                equipes e parceiros.</p>
-        </article>
+        <!-- SEÇÃO PRINCIPAL (HERO) -->
+        <section class="hero">
+            <div class="hero-imagem">
+                <!-- Substitua este placeholder pela tag <img> da sua foto -->
+                <div class="placeholder-img">🖼️ Espaço para Imagem</div>
+            </div>
+            <div class="hero-conteudo">
+            
+                <h1>Manual de Procedimentos Europort</h1>
+                <p>Protocolos de segurança, boas práticas para operação diária e atendimento com excelência.</p>
+                <a href="moradores.html" class="btn-principal">Saiba Mais &rarr;</a>
+            </div>
+        </section>
 
-        <article class="missao">
-            <h2>Missão</h2>
-            <p>Elevar o nível de segurança dos nossos clientes através de sistemas
-                 tecnológicos, atendimento de qualidade e custo-benefício.</p>
-        </article>
+        <!-- SEÇÃO DE VALORES (CARDS) -->
+        <section class="secao">
+            <h2 class="titulo-secao">Nossa Identidade</h2>
+            <div class="valores">
+                <article class="card proposito">
+                    <h2>Propósito</h2>
+                    <h4>Crescer, evoluir e contribuir</h4>
+                    <p>Nosso compromisso é crescer constantemente, evoluir e contribuir ativamente 
+                        para o sucesso de todos que caminham conosco. Acreditamos que, ao desenvolver 
+                        pessoas, entregar valor com excelência e agir com propósito, geramos impacto 
+                        positivo que ultrapassa os muros da nossa empresa e transforma clientes, 
+                        equipes e parceiros.</p>
+                </article>
 
-        <article class="visao">
-            <h2>Visão</h2>
-            <p>Ser a maior e a melhor Portaria a Distância do Brasil</p>
-        </article>
-    </section>
-    <br>
+                <article class="card missao">
+                    <h2>Missão</h2>
+                    <p>Elevar o nível de segurança dos nossos clientes através de sistemas
+                         tecnológicos, atendimento de qualidade e custo-benefício.</p>
+                </article>
 
-    <h1>O esforço gera resultados !</h1>
-    <p>Quando trabalhamos com foco e precisão, entregamos a qualidade e a tranquilidade que nossos clientes merecem.</p>
+                <article class="card visao">
+                    <h2>Visão</h2>
+                    <p>Ser a maior e a melhor Portaria a Distância do Brasil.</p>
+                </article>
+            </div>
+        </section>
 
-    <h4>A noção de responsabilidade nos deveres mínimos é o ponto de partida para o cumprimento das grandes obrigações. </h4>
+        <!-- SEÇÃO DE DESTAQUE FINAL -->
+        <section class="chamada-final">
+            <h1>O esforço gera resultados!</h1>
+            <p>Quando trabalhamos com foco e precisão, entregamos a qualidade e a tranquilidade que nossos clientes merecem.</p>
+            <h4>“A noção de responsabilidade nos deveres mínimos é o ponto de partida para o cumprimento das grandes obrigações.”</h4>
+        </section>
 
+    </main>
+
+    <!-- RODAPÉ UNIFICADO -->
     <footer>
-        <h3 class="links-rodape">Links</h3>
-        <a href="index.html">Início</a>
-        <a href="qualidade.html">Qualidade</a>
-        <a href="moradores.html">Moradores</a>
-        <a href="prestadores.html">Prestadores de Serviços</a>
-        <a href="visitantes.html">Visitantes</a>
-        <a href="liberacoes.html">Liberações</a>
-        <a href="ajuda.html">Ajuda</a>  
-        <a href="sac.html">SAC</a>
+        <div class="footer-container">
+            <div class="footer-links">
+                <h3 class="links-rodape">Links</h3>
+                <a href="index.html">Início</a>
+                <a href="qualidade.html">Qualidade</a>
+                <a href="moradores.html">Moradores</a>
+                <a href="prestadores.html">Prestadores de Serviços</a>
+                <a href="entregas.html">Entregas</a>
+                <a href="visitantes.html">Visitantes</a>
+                <a href="liberacoes.html">Liberações</a>
+                <a href="ajuda.html">Ajuda</a>  
+                <a href="sac.html">SAC</a>
+            </div>
 
-        <h3 class="contato-rodape">Contato</h3>
-        <p>📞Supervisão Central: (19) 98866-0994</p>
-        <p>📞Liderança Operação: (19) 98896-0991</p>
-        <p>📍Endereço: Avenida Assis Brasil, 528, Limeira, São Paulo, 13486-072</p>
-        <p>✉️Email: central@europortbrasil.com.br</p>
-        <br>
-
-
-
-
-
-        <p>&copy; EuroEduca - Europort </p>
+            <div class="footer-contato">
+                <h3 class="contato-rodape">Contato</h3>
+                <p><span class="icone-detalhe">📞</span> Supervisão Central: (19) 98866-0994</p>
+                <p><span class="icone-detalhe">📞</span> Liderança Operação: (19) 98896-0991</p>
+                <p><span class="icone-detalhe">📍</span> Endereço: Avenida Assis Brasil, 528, Limeira, São Paulo, 13486-072</p>
+                <p><span class="icone-detalhe">✉️</span> Email: central@europortbrasil.com.br</p>
+            </div>
+        </div>
+        <div class="footer-copy">
+            <p>&copy; EuroEduca - Europort</p>
+        </div>
     </footer>
+
 </body>
 </html>

@@ -3,122 +3,252 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>EuroEduca - Manual de procedimentos</title>
+    <title>EuroEduca - Atendimento e Controle de Acesso de Moradores</title>
+    <link rel="stylesheet" href="moradores.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Plus+Jakarta+Sans:ital,wght@0,700;0,800;1,800&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@700&display=swap" rel="stylesheet">
 </head>
 <body>
+
+    <!-- CABEÇALHO -->
     <header>
         <nav>
-            <!-- BARRA DE NAVEGAÇÃO -->
-            <h2><span>Euro</span>Educa</h2>
-            <ul>
-                <li>Início</li>
-                <li>Qualidade</li>
-                <li>Moradores</li>
-                <li>Prestadores de Serviços</li>
-                <li>Visitantes</li>
-                <li>Liberações</li>
-                <li>Ajuda</li>
-                <li>SAC</li>
-            </ul>
+            <a href="index.html" class="logo">
+                <span class="logo-icone">
+                    <span class="barra-preta"></span>
+                    <span class="barra-laranja"></span>
+                    <span class="barra-vermelha"></span>
+                </span>
+                <span class="logo-texto"><strong>Euro</strong>Educa</span>
+            </a>
+
+           <ul>
+    <li><a href="index.html">Início</a></li>
+    <li><a href="qualidade.html">Qualidade</a></li>
+    <li><a href="morador.html">Moradores</a></li>
+    <li><a href="prestador.html">Prestadores de Serviços</a></li>
+    <li><a href="entregas.html">Entregas</a></li>
+    <li><a href="visitante.html">Visitantes</a></li>
+    <li><a href="liberacoes.html">Liberações</a></li>
+    <li><a href="ajuda.html">Ajuda</a></li>
+    <li><a href="sac.html">SAC</a></li>
+</ul>
         </nav>
     </header>
-    <br>
 
-<!-- TITULO -->
- <h1>Atendimento e Controle de Acesso de Moradores</h1>
+    <!-- CONTEÚDO PRINCIPAL -->
+    <main class="container">
 
- <!-- CONTEUDO // INSTRUÇÕES  -->
- <h2>Objetivo:</h2>
- <p>Padronizar o atendimento e a identificação de moradores na abertura de portão veicular, acesso social 
-    (em falha facial), retorno de contato perdido e liberação de terceiros (visitantes/prestadores), 
-    garantindo segurança, rastreabilidade e escalonamento de divergências à liderança.</p>
+        <!-- TÍTULO DO POP -->
+        <div class="cabecalho-documento">
+            <span class="tag-categoria">Procedimento Operacional Padrão</span>
+            <h1>Atendimento e Controle de Acesso de Moradores</h1>
+        </div>
 
-    <h2>Definição:</h2>
-    <p>Conceitua o atendimento de moradores como as solicitações recebidas pela Central de Portaria Remota 
-        (via interfones internos, de acesso ou celulares), cujas liberações dependem das verificações de 
-        cada fluxo e das normas do condomínio.</p>
+        <!-- OBJETIVO E DEFINIÇÃO -->
+        <section class="grid-duplo">
+            <article class="bloco-info">
+                <h2 class="titulo-secao">Objetivo</h2>
+                <p>Padronizar a identificação e o atendimento de moradores em solicitações de abertura de portão veicular, acesso social por falha de reconhecimento facial, retorno de contato perdido e liberação de visitantes ou prestadores, assegurando segurança, rastreabilidade e encaminhamento de divergências à liderança.</p>
+            </article>
 
-    <section class="responsabilidades">
-        <h2>Responsabilidades:</h2>
-        <ul>
-          <li>Supervisão da Central de Atendimento: responsável pelo processo.</li>
-          <li>Operadores da Portaria Remota: executores do atendimento.</li>
-          <li>Liderança de Turno (e SAC/suporte técnico, se necessário): assumem divergências, falhas 
-            cadastrais, suspeitas não esclarecidas e rastreiam falhas de reconhecimento facial.</li>
-    </section>
+            <article class="bloco-info">
+                <h2 class="titulo-secao">Definição</h2>
+                <p><strong>Atendimento de moradores:</strong> solicitações recebidas pela Central de Portaria Remota a partir de interfones internos, interfones de acesso ou telefones celulares. A liberação depende das verificações específicas de cada fluxo e das instruções do condomínio.</p>
+            </article>
+        </section>
 
-    <!-- DIVISÃO FLUXOS -->
-     <h2>Procedimento (dividido em 4 fluxos)</h2>
-     <h3>Fluxo 01 — Portão veicular (morador sem controle remoto):</h3>
-     <ul>
-        <li>Identificar condomínio e unidade pelo interfone;</li>
-        <li>Conferir nome completo, CPF, cadastro ativo e foto nas câmeras;</li>
-        <p>Se tudo estiver compatível e seguro, liberar e registrar. Havendo divergência, cadastro inativo ou foto 
-            incompatível, não liberar, registrar e encaminhar à Líder de Turno.</p>
-     </ul>
+        <!-- RESPONSABILIDADES -->
+        <section class="secao">
+            <h2 class="titulo-secao">Responsabilidades</h2>
+            <div class="grid-duplo">
+                <div class="card-responsabilidade">
+                    <h3>Equipe e Papéis</h3>
+                    <ul>
+                        <li><strong>Responsável pelo processo:</strong> Supervisão da Central de Atendimento.</li>
+                        <li><strong>Executores:</strong> Operadores da Portaria Remota.</li>
+                        <li><strong>Áreas envolvidas:</strong> Liderança de Turno e, quando necessário, SAC e suporte técnico.</li>
+                    </ul>
+                </div>
 
-     <h2>Fluxo 02 — Portão social (falha no reconhecimento facial):</h2>
-     <ul>
-        <li>Identificar condomínio, unidade, nome completo, CPF, cadastro ativo e compatibilidade fotográfica;</li>
-        <p>Se validado, abrir a primeira porta e observar a facial na clausura. Se a facial funcionar, acompanhar 
-            e registrar. Se falhar na clausura, liberar com segurança, registrar e comunicar imediatamente à 
-            liderança para rastreamento. Em caso de divergência cadastral/fotográfica, não liberar, registrar 
-            e transferir à liderança.</p>
-     </ul>
+                <div class="card-responsabilidade destaque-lideranca">
+                    <h3>Atribuições da Liderança</h3>
+                    <ul>
+                        <li>Assumir situações de divergência, falha cadastral ou suspeita não esclarecida.</li>
+                        <li>Rastrear falhas de reconhecimento facial.</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
 
-     <h2>Fluxo 03 — Retorno de contato perdido da Central</h2>
-     <section class="fluxo-morador">
-        <article class="fluxoMorador">
-            <h3>Via interfone interno</h3>
-            <p>Identificar a unidade, consultar histórico, informar o motivo do contato, prosseguir e registrar 
-               (sem exigir CPF ou checagem de celular rotineiramente).</p>
+        <!-- PROCEDIMENTOS -->
+        <section class="secao">
+            <h2 class="titulo-secao">Procedimentos</h2>
 
-            <h3>Via celular</h3>
-            <p>Solicitar nome, CPF e unidade, conferindo o cadastro e o número de origem antes de informar o motivo. 
-                Se o número divergir, não passar dados e retornar ao número previamente cadastrado para confirmar 
-                o contato. Sem confirmação positiva, não informar nada, não liberar e registrar.</p>
-        </article>
-     </section>
-     
-     <h2>Fluxo 04 — Morador solicita liberação de visitante ou prestador</h2>
-     <section class="fluxo-morador">
-        <article class="fluxoMorador">
-            <h3>Via interfone interno</h3>
-            <p>Identificar unidade e dados de quem será liberado, aplicando o POP específico (sem exigir CPF do 
-                morador de rotina). Diante de comportamento atípico suspeito (ex.: nervosismo), suspender a 
-                liberação de forma discreta e respeitosa, confirmar nome, CPF e unidade; se a dúvida persistir,
-                 não liberar e acionar a liderança.</p>
+            <!-- Fluxo 01 -->
+            <div class="card-fluxo">
+                <div class="fluxo-header">
+                    <span class="fluxo-badge">Fluxo 01</span>
+                    <h3>Portão veicular: morador sem controle remoto</h3>
+                </div>
+                <ol class="lista-passos">
+                    <li>Receber a solicitação pelo interfone e identificar condomínio e unidade.</li>
+                    <li>Solicitar nome completo e CPF; consultar cadastro e confirmar que está ativo e corresponde à unidade.</li>
+                    <li>Comparar a fotografia cadastrada com a pessoa que solicita acesso, por meio das câmeras disponíveis; consultar instruções específicas.</li>
+                    <li>Se nome, CPF, unidade, cadastro ativo e fotografia forem compatíveis, verificar as condições de segurança, liberar o portão e registrar o atendimento.</li>
+                    <li class="passo-alerta">Se houver divergência, cadastro inativo ou incompatibilidade fotográfica, <strong>não liberar</strong>; encaminhar à Líder de Turno e registrar.</li>
+                </ol>
+            </div>
+<br>
+            <!-- Fluxo 02 -->
+            <div class="card-fluxo">
+                <div class="fluxo-header">
+                    <span class="fluxo-badge">Fluxo 02</span>
+                    <h3>Portão social: falha no reconhecimento facial</h3>
+                </div>
+                <ol class="lista-passos">
+                    <li>Receber a solicitação pelo interfone; identificar condomínio e unidade.</li>
+                    <li>Solicitar nome completo e CPF; confirmar cadastro ativo, dados correspondentes e compatibilidade entre fotografia e pessoa presente.</li>
+                    <li>Se a validação for positiva, abrir a primeira porta e acompanhar o morador pelas câmeras.</li>
+                    <li>Observar se o reconhecimento facial funciona na clausura. Se funcionar, acompanhar a conclusão e registrar.</li>
+                    <li>Se não funcionar, liberar também a clausura, observando as condições de segurança; comunicar imediatamente à liderança para rastreamento da falha e registrar a ocorrência.</li>
+                    <li class="passo-alerta">Se houver divergência cadastral, cadastro inativo ou fotografia incompatível, <strong>não liberar</strong>; transferir à liderança e registrar.</li>
+                </ol>
+            </div>
+            <br>
 
-                 <h3>Via celular</h3>
-                 <p>Conferir nome, CPF, unidade e número de origem; se o número divergir, fazer dupla checagem
-                    retornando ao número cadastrado. Após validar, seguir o POP do visitante/prestador e registrar.</p>
+            <!-- Fluxo 03 -->
+            <div class="card-fluxo">
+                <div class="fluxo-header">
+                    <span class="fluxo-badge">Fluxo 03</span>
+                    <h3>Retorno de contato perdido da Central</h3>
+                </div>
+                <ol class="lista-passos">
+                    <li>Identificar se o retorno ocorre pelo interfone interno do apartamento ou por telefone celular.</li>
+                    <li><strong>Interfone interno:</strong> identificar a unidade de origem, consultar o histórico, informar o motivo do contato anterior, dar continuidade ao atendimento aplicável e registrar. Não exigir rotineiramente CPF ou verificação de celular.</li>
+                    <li><strong>Celular:</strong> antes de informar o motivo do contato, solicitar nome completo, CPF e unidade; conferir os dados e comparar o número de origem com o número cadastrado.</li>
+                    <li>Se o número corresponder e os dados estiverem corretos, consultar o histórico, informar o motivo do contato e registrar.</li>
+                    <li>Se o número divergir, não revelar informações; realizar retorno para número previamente cadastrado e confirmar se o morador está contatando a Central. Só prosseguir após confirmação positiva.</li>
+                    <li class="passo-alerta">Se a confirmação for negativa ou não houver contato, <strong>não fornecer informações nem executar liberação solicitada</strong>; registrar o resultado.</li>
+                </ol>
+            </div>
+<br>
+            <!-- Fluxo 04 -->
+            <div class="card-fluxo">
+                <div class="fluxo-header">
+                    <span class="fluxo-badge">Fluxo 04</span>
+                    <h3>Morador solicita liberação de visitante ou prestador</h3>
+                </div>
+                <ol class="lista-passos">
+                    <li>Identificar o canal de solicitação: interfone interno da unidade ou telefone celular.</li>
+                    <li><strong>Interfone interno:</strong> identificar unidade de origem, quem será liberado e os dados necessários ao registro; verificar a pessoa aguardando e aplicar o procedimento específico de visitantes ou prestadores. Não solicitar CPF do morador rotineiramente.</li>
+                    <li>Se a comunicação pelo interfone apresentar comportamento atípico que cause suspeita (por exemplo, nervosismo ou alteração incomum), suspender temporariamente a liberação, solicitar nome completo, CPF e unidade e conferir o cadastro. Se persistirem dúvidas, não liberar e acionar liderança.</li>
+                    <li><strong>Celular:</strong> solicitar nome completo, CPF e unidade; conferir cadastro e número de origem. Se o número divergir, fazer dupla checagem por retorno a número previamente cadastrado.</li>
+                    <li>Após validação, identificar visitante ou prestador, seguir os POPs específicos de acesso e registrar a liberação ou o motivo de sua não realização.</li>
+                </ol>
 
-   
-     
+                <div class="nota-seguranca">
+                    <strong>Nota de segurança:</strong> comportamento nervoso, isoladamente, não comprova fraude. A verificação adicional deve ser discreta e respeitosa. A conferência de número de origem segue a regra operacional validada, sem substituir a necessidade de atenção a outros indícios de fraude.
+                </div>
+            </div>
+        </section>
+<br>
+        <!-- AUTONOMIA -->
+        <section class="secao">
+            <h2 class="titulo-secao">Autonomia</h2>
+            <div class="bloco-info">
+                <p>O operador pode consultar cadastros e históricos, verificar dados e fotografias, realizar contatos e dupla checagem, liberar acessos quando todas as condições do fluxo forem atendidas e registrar atendimentos. <strong>Não pode liberar diante de divergências ou suspeitas não esclarecidas, alterar cadastros ou corrigir reconhecimento facial por iniciativa própria.</strong> Nesses casos, deve acionar a liderança.</p>
+            </div>
+        </section>
+
+        <!-- RISCOS DO PROCESSO -->
+        <section class="secao">
+            <h2 class="titulo-secao">Riscos do Processo</h2>
+            <div class="tabela-wrapper">
+                <table class="tabela-riscos">
+                    <thead>
+                        <tr>
+                            <th>Risco</th>
+                            <th>Impacto</th>
+                            <th>Controle Preventivo</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><span class="badge-risco">Identificação indevida</span></td>
+                            <td><strong>Acesso não autorizado</strong></td>
+                            <td>Conferência de dados, cadastro ativo e fotografia</td>
+                        </tr>
+                        <tr>
+                            <td><span class="badge-risco">Fraude por telefone</span></td>
+                            <td><strong>Divulgação de informações</strong> ou liberação indevida</td>
+                            <td>Comparação de número e retorno ao cadastrado em caso de divergência</td>
+                        </tr>
+                        <tr>
+                            <td><span class="badge-risco">Falha na facial</span></td>
+                            <td><strong>Acesso impedido</strong> ou liberação inadequada</td>
+                            <td>Validação, observação da clausura e comunicação à liderança</td>
+                        </tr>
+                        <tr>
+                            <td><span class="badge-risco">Registro incompleto</span></td>
+                            <td><strong>Ausência de rastreabilidade</strong></td>
+                            <td>Registro do atendimento e do encaminhamento</td>
+                        </tr>
+                        <tr>
+                            <td><span class="badge-risco">Comportamento suspeito não tratado</span></td>
+                            <td><strong>Risco à segurança</strong></td>
+                            <td>Verificação adicional e escalonamento</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+
+        <!-- REGISTROS E REGRA LEGAL -->
+        <section class="grid-duplo secao">
+            <article class="bloco-info">
+                <h2 class="titulo-secao">Registros</h2>
+                <p>Registros de atendimento e liberação no sistema; dados consultados conforme necessidade; tentativas e resultado de dupla checagem; histórico de contato; ocorrência de falha facial; comunicação e encaminhamento à liderança.</p>
+            </article>
+
+            <article class="bloco-info">
+                <h2 class="titulo-secao">Regra Legal</h2>
+                <p>Observar a <strong>Lei nº 13.709/2018 (LGPD)</strong>, especialmente os princípios de necessidade, finalidade, segurança e acesso restrito no tratamento de dados pessoais e imagens. Respeitar as regras de acesso definidas pelos condomínios e demais normas aplicáveis.</p>
+            </article>
+        </section>
+
+    </main>
+
     <!-- RODAPÉ -->
     <footer>
-        <h3 class="links-rodape">Links</h3>
-        <a href="index.html">Início</a>
-        <a href="qualidade.html">Qualidade</a>
-        <a href="moradores.html">Moradores</a>
-        <a href="prestadores.html">Prestadores de Serviços</a>
-        <a href="visitantes.html">Visitantes</a>
-        <a href="liberacoes.html">Liberações</a>
-        <a href="ajuda.html">Ajuda</a>  
-        <a href="sac.html">SAC</a>
+        <div class="footer-container">
+            <div class="footer-links">
+                <h3>Links</h3>
+                <a href="index.html">Início</a>
+                <a href="qualidade.html">Qualidade</a>
+                <a href="moradores.html">Moradores</a>
+                <a href="prestadores.html">Prestadores de Serviços</a>
+                <a href="entregas.html">Entregas</a>
+                <a href="visitantes.html">Visitantes</a>
+                <a href="liberacoes.html">Liberações</a>
+                <a href="ajuda.html">Ajuda</a>
+                <a href="sac.html">SAC</a>
+            </div>
 
-        <h3 class="contato-rodape">Contato</h3>
-        <p>📞Supervisão Central: (19) 98866-0994</p>
-        <p>📞Liderança Operação: (19) 98896-0991</p>
-        <p>📍Endereço: Avenida Assis Brasil, 528, Limeira, São Paulo, 13486-072</p>
-        <p>✉️Email: central@europortbrasil.com.br</p>
-        <br>
-
-
-
-
-
-        <p>&copy; EuroEduca - Europort </p>
+            <div class="footer-contato">
+                <h3>Contato</h3>
+                <p><span class="icone-detalhe">📞</span> Supervisão Central: (19) 98866-0994</p>
+                <p><span class="icone-detalhe">📞</span> Liderança Operação: (19) 98896-0991</p>
+                <p><span class="icone-detalhe">📍</span> Endereço: Avenida Assis Brasil, 528, Limeira, São Paulo, 13486-072</p>
+                <p><span class="icone-detalhe">✉️</span> Email: central@europortbrasil.com.br</p>
+            </div>
+        </div>
+        <div class="footer-copy">
+            <p>&copy; EuroEduca - Europort</p>
+        </div>
     </footer>
+
 </body>
 </html>
