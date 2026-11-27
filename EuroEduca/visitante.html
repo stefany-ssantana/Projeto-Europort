@@ -1,0 +1,1077 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EuroEduca - Controle de Acesso de Visitantes</title>
+    <link rel="stylesheet" href="visitante.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Plus+Jakarta+Sans:ital,wght@0,700;0,800;1,800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <!-- CABEÇALHO -->
+    <header>
+        <nav>
+            <a href="index.html" class="logo">
+                <span class="logo-icone">
+                    <span class="barra-preta"></span>
+                    <span class="barra-laranja"></span>
+                    <span class="barra-vermelha"></span>
+                </span>
+                <span class="logo-texto"><strong>Euro</strong>Educa</span>
+            </a>
+
+            <ul>
+                <li><a href="index.html">Início</a></li>
+                <li><a href="qualidade.html">Qualidade</a></li>
+                <li><a href="morador.html">Moradores</a></li>
+                <li><a href="prestador.html">Prestadores de Serviços</a></li>
+                <li><a href="entregas.html">Entregas</a></li>
+                <li><a href="visitante.html" class="ativo">Visitantes</a></li>
+                <li><a href="ajuda.html">Ajuda</a></li>
+                <li><a href="sac.html">SAC</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <br><br>
+
+    <!-- CONTEÚDO PRINCIPAL -->
+    <main class="container">
+
+        <!-- TÍTULO DO POP -->
+        <div class="cabecalho-documento">
+            <span class="tag-categoria">Procedimento Operacional Padrão</span>
+            <br>
+            <h1>Controle de Acesso de Visitantes</h1>
+        </div>
+
+        <br><br><br>
+
+        <!-- OBJETIVO -->
+        <section class="secao">
+            <article class="bloco-info">
+                <h2 class="titulo-secao">Objetivo</h2>
+                <br>
+                <p>Padronizar o atendimento, a identificação, a validação de autorizações e a liberação de acesso de visitantes aos condomínios atendidos pela Europort, assegurando o cumprimento das regras de segurança, a rastreabilidade das decisões e a qualidade do atendimento.</p>
+            </article>
+        </section>
+
+        <br><br>
+
+        <!-- DEFINIÇÃO E MODALIDADES (LADO A LADO) -->
+        <section class="grid-duplo">
+            <article class="bloco-info">
+                <h2 class="titulo-secao">Definição</h2>
+                <br>
+                <p>O controle de acesso de visitantes compreende o atendimento às pessoas que solicitam entrada nos condomínios, a consulta às autorizações disponíveis, a confirmação de identidade e a execução da liberação ou negativa de acesso.</p>
+            </article>
+
+            <article class="bloco-info">
+                <h2 class="titulo-secao">Modalidades de Acesso</h2>
+                <br>
+                <p>O processo contempla quatro modalidades:</p>
+                <ul class="lista-definicao">
+                    <li><strong>Visitante com acesso livre:</strong> pessoa com autorização cadastrada, ativa e dentro do prazo de validade de um ano.</li>
+                    <li><strong>Visitante com previsão de visita:</strong> pessoa com autorização cadastrada para datas específicas, disponível no sistema durante sua vigência.</li>
+                    <li><strong>Visitante sem liberação prévia:</strong> pessoa cuja entrada depende de contato e autorização expressa do morador.</li>
+                    <li><strong>Hóspede de Airbnb:</strong> pessoa com autorização de hospedagem cadastrada na Previsão de Visitas, identificada pela indicação HÓSPEDE no campo Departamento.</li>
+                </ul>
+            </article>
+        </section>
+
+        <br><br><br>
+
+        <!-- RESPONSABILIDADES -->
+        <section class="secao">
+            <h2 class="titulo-secao">Responsabilidades</h2>
+            <br>
+            <div class="grid-duplo">
+                <div class="card-responsabilidade">
+                    <h3>Responsabilidades e Envolvidos</h3>
+                    <br>
+                    <ul>
+                        <li><strong>Liderança Operacional da Central de Portaria Remota:</strong> responde pela gestão geral do processo.</li>
+                        <br>
+                        <li><strong>Executores:</strong> colaboradores habilitados atuam no atendimento e controle de acesso conforme as atribuições de seus cargos.</li>
+                        <br>
+                        <li><strong>Áreas envolvidas:</strong> Central de Portaria Remota, Liderança Operacional e SAC (acionado apenas para correções cadastrais).</li>
+                    </ul>
+                </div>
+
+                <div class="card-responsabilidade destaque-lideranca">
+                    <h3>Atribuições Específicas da Liderança</h3>
+                    <br>
+                    <ul>
+                        <li><strong>Autorizações:</strong> verificar e regularizar autorizações de hóspedes que ficarem presas no aplicativo.</li>
+                        <br>
+                        <li><strong>Comunicação:</strong> realizar o contato direto com o proprietário nas situações previstas pelo procedimento.</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <br><br><br>
+
+        <!-- PROCEDIMENTOS -->
+        <section class="secao">
+            <h2 class="titulo-secao">Procedimentos</h2>
+            <br>
+
+            <!-- 1. Identificação inicial e validação do solicitante -->
+            <div class="card-fluxo">
+                <div class="fluxo-header">
+                    <span class="fluxo-badge">1</span>
+                    <h3>Identificação inicial e validação do solicitante</h3>
+                </div>
+                <br>
+                <p class="texto-intro-fluxo">O atendimento poderá ser iniciado por meio do interfone interno do condomínio ou por ligação telefônica externa.</p>
+                <br>
+                <p class="texto-intro-fluxo">O operador deverá identificar o canal utilizado e realizar as verificações correspondentes antes de qualquer liberação.</p>
+                <br><br>
+
+                <h4 class="subtitulo-fluxo">1.1 Atendimento por interfone interno</h4>
+                <br>
+                <ol class="lista-passos">
+                    <li>Receber o chamado pelo interfone.</li>
+                    <br>
+                    <li>Solicitar a unidade de destino, o nome completo e o documento de identificação do visitante.</li>
+                    <br>
+                    <li>Consultar o sistema e verificar a autorização correspondente.</li>
+                </ol>
+                <br>
+                <p class="texto-complemento">Dar continuidade ao fluxo aplicável.</p>
+
+                <br><br><br>
+
+                <h4 class="subtitulo-fluxo">1.2 Atendimento por ligação telefônica externa</h4>
+                <br>
+                <p class="texto-intro-fluxo">Quando uma pessoa se identificar como morador e solicitar liberação de acesso, o operador deverá:</p>
+                <br>
+                <ol class="lista-passos">
+                    <li>Solicitar nome completo, CPF e unidade do morador.</li>
+                    <br>
+                    <li>Conferir os dados informados com o cadastro.</li>
+                    <br>
+                    <li>Verificar se o número de origem da ligação corresponde ao telefone cadastrado.</li>
+                    <br>
+                    <li>Caso os dados e o número correspondam, prosseguir com a solicitação conforme o procedimento operacional vigente.</li>
+                    <br>
+                    <li>Caso o número seja divergente, realizar obrigatoriamente uma ligação para o número previamente cadastrado.</li>
+                </ol>
+
+                <br><br><br>
+
+                <h4 class="subtitulo-fluxo">1.3 Número divergente — Morador atende ao retorno</h4>
+                <br>
+                <ol class="lista-passos">
+                    <li>Perguntar ao morador se ele está em contato com a Portaria Remota solicitando liberação de acesso.</li>
+                    <br>
+                    <li>Se confirmar, prosseguir com o procedimento de liberação aplicável.</li>
+                    <br>
+                    <li class="passo-alerta">Se negar, agradecer pelas informações e <strong>não realizar a liberação</strong>.</li>
+                    <br>
+                    <li>Retornar ao contato inicial, informar que não foi possível validar a solicitação por questões de segurança e encerrar o atendimento.</li>
+                    <br>
+                    <li>Registrar o resultado da verificação e avisar imediatamente a liderança.</li>
+                </ol>
+
+                <br><br><br>
+
+                <h4 class="subtitulo-fluxo">1.4 Número divergente — Morador não atende ao retorno</h4>
+                <br>
+                <ol class="lista-passos">
+                    <li class="passo-alerta"><strong>Não realizar a liberação</strong> solicitada.</li>
+                    <br>
+                    <li>Retornar ao contato inicial.</li>
+                    <br>
+                    <li>Orientar o solicitante a realizar novo contato utilizando os dados cadastrados.</li>
+                    <br>
+                    <li>Encerrar o atendimento.</li>
+                    <br>
+                    <li>Registrar a tentativa de validação e o resultado, e comunicar imediatamente a liderança.</li>
+                </ol>
+                <br><br>
+                <div class="nota-seguranca">
+                    <strong>Regra de segurança:</strong> a informação de nome, CPF e unidade, isoladamente, não autoriza a liberação. A correspondência do número exibido também não constitui prova absoluta de identidade, devendo ser observados todos os controles de segurança definidos pela Europort.
+                </div>
+            </div>
+
+            <br><br><br>
+
+            <!-- 2. Visitante com acesso livre -->
+            <div class="card-fluxo">
+                <div class="fluxo-header">
+                    <span class="fluxo-badge">2</span>
+                    <h3>Visitante com acesso livre</h3>
+                </div>
+                <br>
+
+                <h4 class="subtitulo-fluxo">2.1 Cadastro ativo e válido</h4>
+                <br>
+                <p class="texto-intro-fluxo">Quando o cadastro estiver ativo, dentro do prazo de validade de um ano e com os dados correspondentes:</p>
+                <br>
+                <ol class="lista-passos">
+                    <li>Confirmar a unidade de destino, o nome e o documento.</li>
+                    <br>
+                    <li>Realizar a liberação sem novo contato com o morador.</li>
+                    <br>
+                    <li>Registrar o atendimento e a liberação.</li>
+                </ol>
+
+                <br><br><br>
+
+                <h4 class="subtitulo-fluxo">2.2 Cadastro inativo</h4>
+                <br>
+                <ol class="lista-passos">
+                    <li>Informar ao visitante que será necessário confirmar a autorização.</li>
+                    <br>
+                    <li>Contatar o morador pela sequência padrão: interfone → celular 1 → celular 2.</li>
+                    <br>
+                    <li>Confirmar se autoriza a entrada naquele momento.</li>
+                    <br>
+                    <li>Perguntar se deseja reativar o acesso livre.</li>
+                </ol>
+                <br><br>
+                <div class="nota-seguranca">
+                    <p>Quando o morador autorizar apenas a entrada, o operador realizará a liberação pontual e manterá o cadastro inativo.</p>
+                    <br>
+                    <p>Quando o morador autorizar a entrada e solicitar a reativação, o operador registrará a autorização e acionará a liderança responsável pela reativação.</p>
+                    <br>
+                    <p><strong>Na ausência de autorização válida, o acesso não será liberado.</strong></p>
+                </div>
+            </div>
+
+            <br><br><br>
+
+            <!-- 3. Visitante com previsão de visita -->
+            <div class="card-fluxo">
+                <div class="fluxo-header">
+                    <span class="fluxo-badge">3</span>
+                    <h3>Visitante com previsão de visita</h3>
+                </div>
+                <br>
+
+                <h4 class="subtitulo-fluxo">3.1 Previsão disponível e dados corretos</h4>
+                <br>
+                <ol class="lista-passos">
+                    <li>Consultar a Previsão de Visitas.</li>
+                    <br>
+                    <li>Confirmar a unidade de destino, o nome completo e o documento.</li>
+                    <br>
+                    <li>Verificar se todos os dados correspondem exatamente ao cadastro.</li>
+                    <br>
+                    <li>Realizar a liberação direta.</li>
+                    <br>
+                    <li>Registrar o atendimento.</li>
+                </ol>
+                <br><br>
+                <div class="nota-seguranca">
+                    As previsões ficam disponíveis na consulta apenas nas datas previamente especificadas e desaparecem após o vencimento.
+                </div>
+
+                <br><br><br>
+
+                <h4 class="subtitulo-fluxo">3.2 Previsão com divergência de dados</h4>
+                <br>
+                <p class="texto-alerta-inline">Quando houver qualquer divergência, mesmo de um único número do documento:</p>
+                <br>
+                <ol class="lista-passos">
+                    <li class="passo-alerta"><strong>Não realizar a liberação automática.</strong></li>
+                    <br>
+                    <li>Contatar o morador pela sequência padrão.</li>
+                    <br>
+                    <li>Explicar qual divergência foi identificada e por que a liberação não ocorreu.</li>
+                    <br>
+                    <li>Solicitar autorização expressa para aquele acesso.</li>
+                    <br>
+                    <li>Caso autorize, realizar somente a liberação pontual.</li>
+                    <br>
+                    <li>Orientar o morador a corrigir os dados pelo aplicativo ou entrando em contato com o SAC.</li>
+                    <br>
+                    <li>Registrar a divergência, a autorização e a orientação prestada.</li>
+                </ol>
+                <br><br>
+                <div class="nota-seguranca">
+                    <strong>O operador não deverá corrigir os dados da previsão.</strong>
+                </div>
+
+                <br><br><br>
+
+                <h4 class="subtitulo-fluxo">3.3 Previsão não localizada</h4>
+                <br>
+                <p class="texto-complemento">Quando não houver previsão disponível, seguir o procedimento de visitante sem liberação prévia.</p>
+            </div>
+
+            <br><br><br>
+
+            <!-- 4. Visitante sem liberação prévia -->
+            <div class="card-fluxo">
+                <div class="fluxo-header">
+                    <span class="fluxo-badge">4</span>
+                    <h3>Visitante sem liberação prévia</h3>
+                </div>
+                <br>
+
+                <h4 class="subtitulo-fluxo">4.1 Identificação e contato</h4>
+                <br>
+                <ol class="lista-passos">
+                    <li>Receber a solicitação de acesso.</li>
+                    <br>
+                    <li>Solicitar unidade, nome completo e documento.</li>
+                    <br>
+                    <li>Consultar o sistema.</li>
+                    <br>
+                    <li>Confirmar a inexistência de autorização prévia.</li>
+                    <br>
+                    <li>Informar ao visitante que será necessário contatar o morador.</li>
+                </ol>
+                <br>
+                <p class="texto-complemento">Realizar as tentativas na sequência: interfone → celular 1 → celular 2.</p>
+
+                <br><br><br>
+
+                <h4 class="subtitulo-fluxo">4.2 Morador autoriza</h4>
+                <br>
+                <ol class="lista-passos">
+                    <li>Confirmar a autorização.</li>
+                    <br>
+                    <li>Realizar a liberação pontual.</li>
+                    <br>
+                    <li>Registrar em resolução a autorização e a liberação.</li>
+                    <br>
+                    <li>Encerrar o atendimento.</li>
+                </ol>
+                <br><br>
+                <div class="nota-seguranca">
+                    Não será necessário orientar o morador a cadastrar previsão de visita.
+                </div>
+
+                <br><br><br>
+
+                <h4 class="subtitulo-fluxo">4.3 Morador nega</h4>
+                <br>
+                <div class="nota-seguranca">
+                    <strong>Não realizar a liberação, informar ao visitante de maneira cordial que <em>não foi possível</em> estabelecer o contato e registrar a negativa.</strong>
+                </div>
+
+                <br><br><br>
+
+                <h4 class="subtitulo-fluxo">4.4 Morador não atende</h4>
+                <br>
+                <ol class="lista-passos">
+                    <li>Informar ao visitante que não foi possível estabelecer contato.</li>
+                    <br>
+                    <li>Orientá-lo a tentar contato diretamente com o morador.</li>
+                    <br>
+                    <li>Solicitar que acione novamente o interfone caso consiga contato.</li>
+                    <br>
+                    <li class="passo-alerta"><strong>Manter o acesso não autorizado.</strong></li>
+                    <br>
+                    <li>Registrar as tentativas realizadas.</li>
+                </ol>
+            </div>
+
+            <br><br><br>
+
+            <!-- 5. Hóspedes de Airbnb -->
+            <div class="card-fluxo">
+                <div class="fluxo-header">
+                    <span class="fluxo-badge">5</span>
+                    <h3>Hóspedes de Airbnb</h3>
+                </div>
+                <br>
+
+                <h4 class="subtitulo-fluxo">5.1 Identificação e consulta</h4>
+                <br>
+                <ol class="lista-passos">
+                    <li>Receber a solicitação de acesso.</li>
+                    <br>
+                    <li>Solicitar unidade de destino, nome completo e documento de identificação.</li>
+                    <br>
+                    <li>Consultar a Previsão de Visitas.</li>
+                    <br>
+                    <li>Verificar a indicação HÓSPEDE no campo Departamento.</li>
+                    <br>
+                    <li>Conferir integralmente os dados cadastrados.</li>
+                    <br>
+                    <li>Verificar o horário de check-in aplicável.</li>
+                </ol>
+
+                <br><br><br>
+
+                <h4 class="subtitulo-fluxo">5.2 Previsão disponível e válida</h4>
+                <br>
+                <p class="texto-intro-fluxo">Quando a previsão estiver disponível, os dados corresponderem ao cadastro e o acesso estiver dentro das condições autorizadas:</p>
+                <br>
+                <ol class="lista-passos">
+                    <li>Confirmar a unidade de destino.</li>
+                    <br>
+                    <li>Realizar a liberação diretamente.</li>
+                    <br>
+                    <li>Registrar o atendimento.</li>
+                </ol>
+
+                <br><br><br>
+
+                <h4 class="subtitulo-fluxo">5.3 Previsão não localizada</h4>
+                <br>
+                <ol class="lista-passos">
+                    <li class="passo-alerta"><strong>Não realizar a liberação automática.</strong></li>
+                    <br>
+                    <li>Acionar a liderança para verificar se a autorização está presa no aplicativo.</li>
+                    <br>
+                    <li>Aguardar a verificação e eventual regularização pela liderança.</li>
+                    <br>
+                    <li>Consultar novamente a Previsão de Visitas.</li>
+                    <br>
+                    <li>Se a autorização aparecer, conferir os dados e as condições de acesso.</li>
+                    <br>
+                    <li>Realizar a liberação somente quando a previsão estiver regularizada e válida e/ou com a validação da liderança.</li>
+                    <br>
+                    <li>Registrar o atendimento.</li>
+                </ol>
+
+                <br><br><br>
+
+                <h4 class="subtitulo-fluxo">5.4 Solicitação de entrada antecipada</h4>
+                <br>
+                <p class="texto-intro-fluxo">Quando o hóspede solicitar acesso antes do horário de check-in:</p>
+                <br>
+                <ol class="lista-passos">
+                    <li>Verificar o horário previsto.</li>
+                    <br>
+                    <li>Acionar a liderança operacional.</li>
+                    <br>
+                    <li>A liderança deverá tentar contato com o proprietário responsável pela hospedagem.</li>
+                    <br>
+                    <li>Solicitar autorização expressa para a entrada antecipada.</li>
+                    <br>
+                    <li>Caso o proprietário autorize, realizar a liberação antecipada conforme a orientação da liderança, registrando a autorização.</li>
+                    <br>
+                    <li class="passo-alerta">Caso o proprietário não atenda ou não autorize, <strong>não realizar a liberação antecipada</strong>.</li>
+                    <br>
+                    <li>Registrar o resultado do atendimento.</li>
+                </ol>
+                <br><br>
+                <div class="nota-seguranca">
+                    A liderança deverá ser acionada também quando não houver autorização de hospedagem localizada, para verificar a situação com o proprietário. <strong>A entrada não poderá ser liberada sem autorização válida.</strong>
+                </div>
+            </div>
+        </section>
+
+        <br><br><br>
+
+        <!-- AUTONOMIA -->
+        <section class="secao">
+            <h2 class="titulo-secao">Autonomia</h2>
+            <br>
+            <div class="bloco-info">
+                <p>Os operadores habilitados poderão realizar liberações diretas quando houver autorização válida, correspondência integral dos dados e cumprimento das condições de acesso.</p>
+                <br>
+                <p>Também poderão realizar liberações pontuais mediante autorização válida do responsável habilitado, observando os procedimentos específicos.</p>
+                <br><br>
+                <p><strong>Os operadores não possuem autonomia para:</strong></p>
+                <br>
+                <div class="caixa-restricoes-autonomia">
+                    <ul>
+                        <li>Liberar visitantes sem autorização válida.</li>
+                        <br>
+                        <li>Ignorar divergências cadastrais.</li>
+                        <br>
+                        <li>Reativar acessos livres sem encaminhamento à liderança.</li>
+                        <br>
+                        <li>Alterar dados de previsão de visita em nome do morador.</li>
+                        <br>
+                        <li>Conceder acessos permanentes com base em autorizações pontuais.</li>
+                        <br>
+                        <li>Regularizar autorizações de hóspedes presas no aplicativo por iniciativa própria.</li>
+                        <br>
+                        <li>Antecipar o acesso de hóspedes sem autorização do proprietário.</li>
+                        <br>
+                        <li>Liberar acessos por ligação externa quando a validação obrigatória não tiver sido concluída.</li>
+                    </ul>
+                </div>
+                <br><br>
+                <div class="nota-seguranca">
+                    Situações excepcionais, conflitos e suspeitas de irregularidade deverão ser encaminhados à liderança operacional.
+                </div>
+            </div>
+        </section>
+
+        <br><br><br>
+
+        <!-- RISCOS DO PROCESSO -->
+        <section class="secao">
+            <h2 class="titulo-secao">Riscos do Processo</h2>
+            <br>
+            <div class="tabela-wrapper">
+                <table class="tabela-riscos">
+                    <thead>
+                        <tr>
+                            <th>Risco</th>
+                            <th>Impacto</th>
+                            <th>Controle preventivo</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><span class="badge-risco">Liberação de pessoa não autorizada</span></td>
+                            <td><strong>Comprometimento da segurança</strong> do condomínio</td>
+                            <td>Conferência de dados e autorização válida</td>
+                        </tr>
+                        <tr>
+                            <td><span class="badge-risco">Liberação com documento divergente</span></td>
+                            <td><strong>Possibilidade de acesso indevido</strong></td>
+                            <td>Confirmação obrigatória com morador</td>
+                        </tr>
+                        <tr>
+                            <td><span class="badge-risco">Utilização de cadastro inativo</span></td>
+                            <td><strong>Entrada sem autorização vigente</strong></td>
+                            <td>Consulta da situação cadastral</td>
+                        </tr>
+                        <tr>
+                            <td><span class="badge-risco">Reativação indevida de acesso livre</span></td>
+                            <td><strong>Permissão permanente não autorizada</strong></td>
+                            <td>Encaminhamento à liderança</td>
+                        </tr>
+                        <tr>
+                            <td><span class="badge-risco">Falha na identificação do autorizador</span></td>
+                            <td><strong>Autorização concedida por pessoa não habilitada</strong></td>
+                            <td>Validação por canais cadastrados</td>
+                        </tr>
+                        <tr>
+                            <td><span class="badge-risco">Ausência de registro</span></td>
+                            <td><strong>Falta de rastreabilidade</strong></td>
+                            <td>Registro obrigatório do atendimento</td>
+                        </tr>
+                        <tr>
+                            <td><span class="badge-risco">Liberação indevida por falsa identificação de morador em ligação externa</span></td>
+                            <td><strong>Acesso não autorizado</strong> e comprometimento da segurança</td>
+                            <td>Conferência de nome, CPF e unidade; verificação do telefone; retorno obrigatório ao número cadastrado quando divergente; não liberação sem validação</td>
+                        </tr>
+                        <tr>
+                            <td><span class="badge-risco">Liberação antecipada de hóspede sem autorização</span></td>
+                            <td><strong>Acesso fora das condições</strong> da hospedagem</td>
+                            <td>Conferência do check-in e autorização do proprietário pela liderança</td>
+                        </tr>
+                        <tr>
+                            <td><span class="badge-risco">Liberação de hóspede com previsão não regularizada</span></td>
+                            <td><strong>Acesso sem autorização disponível</strong> para conferência</td>
+                            <td>Verificação e regularização pela liderança antes da liberação</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+
+        <br><br><br>
+
+        <!-- REGISTROS E REGRA LEGAL -->
+        <section class="grid-duplo secao">
+            <article class="bloco-info">
+                <h2 class="titulo-secao">Registros</h2>
+                <br>
+                <p>Deverão ser mantidos, conforme as funcionalidades dos sistemas utilizados pela Europort:</p>
+                <br>
+                <ol class="lista-registros">
+                    <li>Identificação do visitante e unidade de destino.</li>
+                    
+                    <li>Modalidade de acesso consultada.</li>
+                    
+                    <li>Resultado da conferência cadastral.</li>
+                    
+                    <li>Tentativas de contato com o morador, quando aplicáveis.</li>
+                    
+                    <li>Autorização, negativa ou ausência de resposta.</li>
+                    
+                    <li>Liberação realizada ou acesso não autorizado.</li>
+                    
+                    <li>Divergências identificadas e orientações prestadas.</li>
+                    
+                    <li>Encaminhamentos à liderança, quando necessários.</li>
+                    
+                    <li>Ligações externas utilizadas para solicitar liberações, incluindo divergências, tentativas de validação, confirmação ou negativa e resultado.</li>
+                    
+                    <li>Verificações e regularizações de autorizações de hóspedes.</li>
+                </ol>
+                <br>
+                <p>Autorizações ou negativas de entrada antecipada de hóspedes.</p>
+                <br><br>
+                <div class="nota-seguranca">
+                    Os registros deverão respeitar os critérios de necessidade, acesso autorizado e proteção de dados.
+                </div>
+            </article>
+
+            <article class="bloco-info">
+                <h2 class="titulo-secao">Regra Legal</h2>
+                <br>
+                <p>O tratamento dos dados pessoais de visitantes, moradores e hóspedes deverá observar a <strong>Lei nº 13.709/2018 — Lei Geral de Proteção de Dados Pessoais (LGPD)</strong>, especialmente os princípios de finalidade, necessidade, segurança e prevenção.</p>
+                <br><br>
+                <p>Os operadores deverão utilizar os dados exclusivamente para finalidades profissionais autorizadas, respeitar as permissões de acesso aos sistemas e preservar a confidencialidade das informações.</p>
+                <br><br>
+                <p>Também deverão ser observadas as regras contratuais e os procedimentos de segurança aplicáveis a cada condomínio, desde que compatíveis com a legislação vigente.</p>
+            </article>
+        </section>
+
+        <br><br><br>
+
+        <!-- =========================================================
+             SEÇÃO EM DESTAQUE: FLUXOGRAMAS (VISITANTES)
+             ========================================================= -->
+        <section class="secao-fluxogramas-destaque">
+
+            <!-- CABEÇALHO PRINCIPAL DOS FLUXOGRAMAS -->
+            <div class="fluxograma-banner-principal">
+                <span class="badge-material-visual">Material Visual para Treinamento e Consulta</span>
+                <br>
+                <h2>FLUXOGRAMA — CONTROLE DE ACESSO DE VISITANTES</h2>
+                <br>
+                <p class="subtitulo-banner-fluxo">Use a etapa inicial para identificar o canal de atendimento. Em seguida, consulte a modalidade de acesso correspondente. Cada liberação ou negativa deve ser registrada.</p>
+            </div>
+
+            <br><br><br>
+
+            <!-- ETAPA INICIAL — CANAL DE ATENDIMENTO -->
+            <div class="bloco-fluxograma">
+                <div class="fluxograma-titulo-barra">
+                    <span class="numero-fluxo">ETAPA INICIAL</span>
+                    <h3>CANAL DE ATENDIMENTO</h3>
+                </div>
+                <br><br>
+
+                <div class="caixa-etapa">
+                    RECEBER SOLICITAÇÃO DE ACESSO
+                </div>
+
+                <br>
+                <div class="seta-fluxo">↓</div>
+                <br>
+
+                <div class="caixa-decisao">
+                    ◆ QUAL É O CANAL DE ATENDIMENTO?
+                </div>
+
+                <br>
+
+                <table class="tabela-fluxograma">
+                    <tbody>
+                        <tr>
+                            <td class="col-condicao">INTERFONE INTERNO</td>
+                            <td class="col-acao">Identificar visitante: unidade, nome completo e documento. Consultar autorização.</td>
+                        </tr>
+                        <tr>
+                            <td class="col-condicao">LIGAÇÃO EXTERNA</td>
+                            <td class="col-acao">Confirmar nome completo, CPF e unidade do morador. Conferir telefone de origem.</td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <br>
+                <div class="seta-fluxo">↓</div>
+                <br>
+
+                <div class="caixa-decisao">
+                    ◆ LIGAÇÃO EXTERNA: O NÚMERO CONFERE COM O CADASTRO?
+                </div>
+
+                <br>
+
+                <table class="tabela-fluxograma">
+                    <tbody>
+                        <tr>
+                            <td class="col-condicao">SIM</td>
+                            <td class="col-acao">Seguir o procedimento vigente para a modalidade. Atenção: identificador de chamadas pode ser falsificado.</td>
+                        </tr>
+                        <tr>
+                            <td class="col-condicao">NÃO</td>
+                            <td class="col-acao">Ligar obrigatoriamente para o número previamente cadastrado.</td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <br>
+                <div class="seta-fluxo">↓</div>
+                <br>
+
+                <div class="caixa-classificacao">
+                    NO RETORNO AO NÚMERO CADASTRADO
+                </div>
+
+                <br>
+
+                <table class="tabela-fluxograma">
+                    <tbody>
+                        <tr>
+                            <td class="col-condicao">CONFIRMA SOLICITAÇÃO</td>
+                            <td class="col-acao">Prosseguir com o fluxo aplicável.</td>
+                        </tr>
+                        <tr>
+                            <td class="col-condicao">NEGA SOLICITAÇÃO</td>
+                            <td class="col-acao">Não liberar; retornar ao contato inicial e encerrar por segurança.</td>
+                        </tr>
+                        <tr>
+                            <td class="col-condicao">NÃO ATENDE</td>
+                            <td class="col-acao">Não liberar; orientar novo contato pelo número cadastrado.</td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <br><br>
+
+                <div class="caixa-regra-alerta">
+                    <strong>REGRA:</strong> Nome, CPF e unidade isoladamente não comprovam identidade. Registrar verificações e decisões.
+                </div>
+            </div>
+
+            <br><br><br>
+
+            <!-- FLUXO 01 — VISITANTE COM ACESSO LIVRE -->
+            <div class="bloco-fluxograma">
+                <div class="fluxograma-titulo-barra">
+                    <span class="numero-fluxo">FLUXO 01</span>
+                    <h3>VISITANTE COM ACESSO LIVRE</h3>
+                </div>
+                <br><br>
+
+                <div class="caixa-etapa">
+                    Identificar visitante → Consultar cadastro e validade (1 ano)
+                </div>
+
+                <br>
+                <div class="seta-fluxo">↓</div>
+                <br>
+
+                <div class="caixa-decisao">
+                    ◆ CADASTRO ATIVO, VÁLIDO E DADOS CORRETOS?
+                </div>
+
+                <br>
+
+                <table class="tabela-fluxograma">
+                    <tbody>
+                        <tr>
+                            <td class="col-condicao">SIM</td>
+                            <td class="col-acao">Liberar diretamente e registrar.</td>
+                        </tr>
+                        <tr>
+                            <td class="col-condicao">INATIVO</td>
+                            <td class="col-acao">Contatar morador: interfone → celular 1 → celular 2.</td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <br>
+                <div class="seta-fluxo">↓</div>
+                <br>
+
+                <div class="caixa-decisao">
+                    ◆ MORADOR AUTORIZA?
+                </div>
+
+                <br>
+
+                <table class="tabela-fluxograma">
+                    <tbody>
+                        <tr>
+                            <td class="col-condicao">AUTORIZA E REATIVA</td>
+                            <td class="col-acao">Liberar pontualmente; acionar liderança para reativação.</td>
+                        </tr>
+                        <tr>
+                            <td class="col-condicao">AUTORIZA SÓ AGORA</td>
+                            <td class="col-acao">Liberar pontualmente; manter cadastro inativo.</td>
+                        </tr>
+                        <tr>
+                            <td class="col-condicao">NEGA OU NÃO ATENDE</td>
+                            <td class="col-acao">Não liberar; orientar visitante se não houver contato.</td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <br><br>
+
+                <div class="caixa-regra-alerta">
+                    <strong>REGRA:</strong> Operador não reativa acesso livre por conta própria.
+                </div>
+            </div>
+
+            <br><br><br>
+
+            <!-- FLUXO 02 — VISITANTE COM PREVISÃO DE VISITA -->
+            <div class="bloco-fluxograma">
+                <div class="fluxograma-titulo-barra">
+                    <span class="numero-fluxo">FLUXO 02</span>
+                    <h3>VISITANTE COM PREVISÃO DE VISITA</h3>
+                </div>
+                <br><br>
+
+                <div class="caixa-etapa">
+                    Identificar visitante → Consultar Previsão de Visitas
+                </div>
+
+                <br>
+                <div class="seta-fluxo">↓</div>
+                <br>
+
+                <div class="caixa-decisao">
+                    ◆ PREVISÃO DISPONÍVEL E TODOS OS DADOS EXATOS?
+                </div>
+
+                <br>
+
+                <table class="tabela-fluxograma">
+                    <tbody>
+                        <tr>
+                            <td class="col-condicao">SIM</td>
+                            <td class="col-acao">Liberar diretamente e registrar.</td>
+                        </tr>
+                        <tr>
+                            <td class="col-condicao">HÁ DIVERGÊNCIA</td>
+                            <td class="col-acao">Contatar morador, explicar divergência e pedir autorização.</td>
+                        </tr>
+                        <tr>
+                            <td class="col-condicao">NÃO LOCALIZADA</td>
+                            <td class="col-acao">Seguir Fluxo 03 — Sem liberação prévia.</td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <br>
+                <div class="seta-fluxo">↓</div>
+                <br>
+
+                <div class="caixa-decisao">
+                    ◆ SE HOUVER DIVERGÊNCIA: MORADOR AUTORIZA?
+                </div>
+
+                <br>
+
+                <table class="tabela-fluxograma">
+                    <tbody>
+                        <tr>
+                            <td class="col-condicao">SIM</td>
+                            <td class="col-acao">Liberar somente agora; orientar correção pelo aplicativo ou SAC.</td>
+                        </tr>
+                        <tr>
+                            <td class="col-condicao">NÃO / SEM CONTATO</td>
+                            <td class="col-acao">Não liberar; registrar.</td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <br><br>
+
+                <div class="caixa-regra-alerta">
+                    <strong>REGRA:</strong> Mesmo um único número divergente impede a liberação automática. Operador não altera cadastro.
+                </div>
+            </div>
+
+            <br><br><br>
+
+            <!-- FLUXO 03 — VISITANTE SEM LIBERAÇÃO PRÉVIA -->
+            <div class="bloco-fluxograma">
+                <div class="fluxograma-titulo-barra">
+                    <span class="numero-fluxo">FLUXO 03</span>
+                    <h3>VISITANTE SEM LIBERAÇÃO PRÉVIA</h3>
+                </div>
+                <br>
+
+                <p class="nota-documento-interno">EUROPORT — PORTARIA SEGURA A DISTÂNCIA · Grupo Protege Alarmes</p>
+
+                <br><br>
+
+                <div class="caixa-etapa">
+                    Receber chamado → Identificar unidade, nome e documento → Consultar Sistema
+                </div>
+
+                <br>
+                <div class="seta-fluxo">↓</div>
+                <br>
+
+                <div class="caixa-classificacao">
+                    NÃO EXISTE AUTORIZAÇÃO PRÉVIA
+                </div>
+
+                <br>
+                <div class="seta-fluxo">↓</div>
+                <br>
+
+                <div class="caixa-etapa">
+                    Contatar morador: interfone → celular 1 → celular 2
+                </div>
+
+                <br>
+                <div class="seta-fluxo">↓</div>
+                <br>
+
+                <div class="caixa-decisao">
+                    ◆ QUAL FOI A RESPOSTA?
+                </div>
+
+                <br>
+
+                <table class="tabela-fluxograma">
+                    <tbody>
+                        <tr>
+                            <td class="col-condicao">AUTORIZA</td>
+                            <td class="col-acao">Liberar pontualmente e registrar.</td>
+                        </tr>
+                        <tr>
+                            <td class="col-condicao">NEGA</td>
+                            <td class="col-acao">Não liberar e registrar.</td>
+                        </tr>
+                        <tr>
+                            <td class="col-condicao">NÃO ATENDE</td>
+                            <td class="col-acao">Não liberar; orientar visitante a falar com morador e acionar interfone novamente.</td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <br><br>
+
+                <div class="caixa-regra-alerta">
+                    <strong>REGRA:</strong> Não orientar cadastro de previsão de visita nesse atendimento.
+                </div>
+            </div>
+
+            <br><br><br>
+
+            <!-- FLUXO 04 — HÓSPEDES DE AIRBNB -->
+            <div class="bloco-fluxograma">
+                <div class="fluxograma-titulo-barra">
+                    <span class="numero-fluxo">FLUXO 04</span>
+                    <h3>HÓSPEDES DE AIRBNB</h3>
+                </div>
+                <br><br>
+
+                <div class="caixa-etapa">
+                    Identificar hóspede → Consultar Previsão de Visitas
+                </div>
+
+                <br>
+                <div class="seta-fluxo">↓</div>
+                <br>
+
+                <div class="caixa-etapa">
+                    Conferir indicação HOSPEDE no campo Departamento, dados e horário de check-in
+                </div>
+
+                <br>
+                <div class="seta-fluxo">↓</div>
+                <br>
+
+                <div class="caixa-decisao">
+                    ◆ PREVISÃO ESTÁ DISPONÍVEL E VÁLIDA?
+                </div>
+
+                <br>
+
+                <table class="tabela-fluxograma">
+                    <tbody>
+                        <tr>
+                            <td class="col-condicao">SIM, NO HORÁRIO</td>
+                            <td class="col-acao">Liberar diretamente e registrar.</td>
+                        </tr>
+                        <tr>
+                            <td class="col-condicao">NÃO LOCALIZADA</td>
+                            <td class="col-acao">Acionar liderança: verificar autorização presa no aplicativo e regularizar.</td>
+                        </tr>
+                        <tr>
+                            <td class="col-condicao">ANTES DO CHECK-IN</td>
+                            <td class="col-acao">Liderança contata proprietário para autorização de antecipação.</td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <br>
+                <div class="seta-fluxo">↓</div>
+                <br>
+
+                <div class="caixa-classificacao">
+                    DECISÃO APÓS VERIFICAÇÃO
+                </div>
+
+                <br>
+
+                <table class="tabela-fluxograma">
+                    <tbody>
+                        <tr>
+                            <td class="col-condicao">REGULARIZADA</td>
+                            <td class="col-acao">Operador consulta novamente, confere dados e libera se válida.</td>
+                        </tr>
+                        <tr>
+                            <td class="col-condicao">PROPRIETÁRIO AUTORIZA ANTECIPAÇÃO</td>
+                            <td class="col-acao">Liberar antecipadamente conforme orientação da liderança e registrar.</td>
+                        </tr>
+                        <tr>
+                            <td class="col-condicao">SEM AUTORIZAÇÃO / SEM CONTATO</td>
+                            <td class="col-acao">Não liberar.</td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <br><br>
+
+                <div class="caixa-regra-alerta">
+                    <strong>REGRA:</strong> Hóspede não é liberado apenas por informar que possui reserva. Registrar autorizações e tentativas.
+                </div>
+
+                <br><br>
+
+                <p class="nota-documento-interno">Documento de apoio visual. Em caso de dúvida, prevalece o POP PR-POP-0001 aprovado e as regras específicas do condomínio.</p>
+            </div>
+
+        </section>
+
+    </main>
+
+    <br><br><br><br>
+
+    <!-- RODAPÉ -->
+    <footer>
+        <div class="footer-container">
+            <div class="footer-links">
+                <h3>Links</h3>
+                <br>
+                <a href="index.html">Início</a>
+                <br>
+                <a href="qualidade.html">Qualidade</a>
+                <br>
+                <a href="moradores.html">Moradores</a>
+                <br>
+                <a href="prestador.html">Prestadores de Serviços</a>
+                <br>
+                <a href="entregas.html">Entregas</a>
+                <br>
+                <a href="visitantes.html">Visitantes</a>
+                <br>
+                <a href="liberacoes.html">Liberações</a>
+                <br>
+                <a href="ajuda.html">Ajuda</a>
+                <br>
+                <a href="sac.html">SAC</a>
+            </div>
+
+            <div class="footer-contato">
+                <h3>Contato</h3>
+                <br>
+                <p><span class="icone-detalhe">📞</span> Supervisão Central: (19) 98866-0994</p>
+                <br>
+                <p><span class="icone-detalhe">📞</span> Liderança Operação: (19) 98896-0991</p>
+                <br>
+                <p><span class="icone-detalhe">📍</span> Endereço: Avenida Assis Brasil, 528, Limeira, São Paulo, 13486-072</p>
+                <br>
+                <p><span class="icone-detalhe">✉️</span> Email: central@europortbrasil.com.br</p>
+            </div>
+        </div>
+        <br><br>
+        <div class="footer-copy">
+            <p>&copy; EuroEduca - Europort</p>
+        </div>
+    </footer>
+
+</body>
+</html>

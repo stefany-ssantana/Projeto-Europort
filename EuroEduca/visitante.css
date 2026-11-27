@@ -1,0 +1,777 @@
+/* --- VARIÁVEIS DE CORES E RESET --- */
+:root {
+    --preto: #141414;
+    --preto-suave: #262626;
+    --branco: #ffffff;
+    --cinza-fundo: #f7f7f8;
+    --cinza-borda: #e2e2e5;
+    --cinza-texto: #4a4a4a;
+    --laranja: #ff6b00;
+    --laranja-claro: #fff4ec;
+    --vermelho-detalhe: #d9383a;
+    --vermelho-fundo: #fff2f2;
+}
+
+/* --- CONFIGURAÇÃO DE FONTES --- */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+    -webkit-font-smoothing: antialiased;
+}
+
+body {
+    background-color: var(--cinza-fundo);
+    color: var(--preto-suave);
+    line-height: 1.6;
+}
+
+h1, h2, h3, h4, .logo-texto, .fluxo-badge, .tag-categoria {
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    letter-spacing: -0.02em;
+}
+
+/* --- CABEÇALHO --- */
+header {
+    background-color: var(--branco);
+    border-bottom: 3px solid var(--laranja);
+    padding: 18px 5%;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.04);
+}
+
+nav {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    text-decoration: none;
+}
+
+.logo-icone {
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+    width: 24px;
+    transform: skewX(-15deg);
+}
+
+.logo-icone span {
+    height: 5px;
+    display: block;
+    border-radius: 1px;
+}
+
+.barra-preta { background-color: var(--preto); width: 100%; }
+.barra-laranja { background-color: var(--laranja); width: 85%; }
+.barra-vermelha { background-color: var(--vermelho-detalhe); width: 70%; }
+
+.logo-texto {
+    font-size: 1.6rem;
+    font-style: italic;
+    color: var(--laranja);
+    letter-spacing: -0.5px;
+}
+
+.logo-texto strong {
+    color: var(--preto);
+    font-weight: 800;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+nav ul li {
+    font-size: 0.88rem;
+    font-weight: 500;
+    color: var(--preto-suave);
+}
+
+nav ul li:not(:last-child)::after {
+    content: "|";
+    margin: 0 10px;
+    color: #ccc;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: inherit;
+    padding-bottom: 4px;
+    transition: color 0.2s;
+}
+
+nav ul li a:hover,
+nav ul li a.ativo {
+    color: var(--laranja);
+    font-weight: 700;
+}
+
+/* --- CONTAINER PRINCIPAL --- */
+.container {
+    max-width: 1120px;
+    margin: 40px auto 70px;
+    padding: 0 5%;
+}
+
+.cabecalho-documento {
+    background-color: var(--preto);
+    color: var(--branco);
+    padding: 36px 40px;
+    border-radius: 14px;
+    margin-bottom: 35px;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.08);
+}
+
+.tag-categoria {
+    display: inline-block;
+    background-color: var(--laranja);
+    color: var(--branco);
+    font-size: 0.75rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    padding: 4px 12px;
+    border-radius: 20px;
+    margin-bottom: 12px;
+}
+
+.cabecalho-documento h1 {
+    font-size: 2rem;
+    font-weight: 800;
+    line-height: 1.25;
+}
+
+/* --- SEÇÕES E TÍTULOS --- */
+.secao {
+    margin-top: 40px;
+}
+
+.titulo-secao {
+    font-size: 1.15rem;
+    font-weight: 800;
+    text-transform: uppercase;
+    letter-spacing: 0.6px;
+    color: var(--laranja);
+    margin-bottom: 18px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.titulo-secao::before {
+    content: "";
+    display: inline-block;
+    width: 5px;
+    height: 20px;
+    background-color: var(--laranja);
+    border-radius: 3px;
+}
+
+/* --- GRIDS E CARDS DE INFORMAÇÃO --- */
+.grid-duplo {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 24px;
+}
+
+.bloco-info {
+    background-color: var(--branco);
+    border: 1px solid var(--cinza-borda);
+    border-radius: 12px;
+    padding: 28px 30px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.03);
+}
+
+.bloco-info p {
+    font-size: 0.96rem;
+    color: var(--cinza-texto);
+}
+
+.lista-definicao {
+    padding-left: 18px;
+    color: var(--cinza-texto);
+    font-size: 0.94rem;
+}
+
+.lista-definicao li {
+    margin-bottom: 8px;
+}
+
+.lista-registros {
+    padding-left: 20px;
+    color: var(--cinza-texto);
+    font-size: 0.94rem;
+}
+
+.lista-registros li {
+    margin-bottom: 6px;
+}
+
+/* Caixa de restrições em Autonomia */
+.caixa-restricoes-autonomia {
+    background-color: var(--cinza-fundo);
+    border: 1px solid var(--cinza-borda);
+    border-radius: 10px;
+    padding: 20px 26px;
+}
+
+.caixa-restricoes-autonomia ul {
+    padding-left: 18px;
+    color: var(--preto-suave);
+    font-size: 0.95rem;
+}
+
+.caixa-restricoes-autonomia li {
+    margin-bottom: 8px;
+}
+
+.caixa-restricoes-autonomia li:last-child {
+    margin-bottom: 0;
+}
+
+/* --- CARDS DE RESPONSABILIDADES --- */
+.card-responsabilidade {
+    background-color: var(--branco);
+    border: 1px solid var(--cinza-borda);
+    border-top: 4px solid var(--preto);
+    border-radius: 12px;
+    padding: 26px 28px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.03);
+}
+
+.card-responsabilidade.destaque-lideranca {
+    border-top-color: var(--laranja);
+}
+
+.card-responsabilidade h3 {
+    font-size: 1.05rem;
+    font-weight: 700;
+    color: var(--preto);
+    margin-bottom: 14px;
+}
+
+.card-responsabilidade ul {
+    padding-left: 18px;
+    color: var(--cinza-texto);
+    font-size: 0.95rem;
+}
+
+.card-responsabilidade li {
+    margin-bottom: 10px;
+}
+
+/* --- CARDS DE FLUXOS (PROCEDIMENTOS) --- */
+.card-fluxo {
+    background-color: var(--branco);
+    border: 1px solid var(--cinza-borda);
+    border-radius: 12px;
+    padding: 28px 32px;
+    margin-bottom: 24px;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.03);
+}
+
+.fluxo-header {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    padding-bottom: 16px;
+    margin-bottom: 20px;
+    border-bottom: 1px solid var(--cinza-borda);
+    flex-wrap: wrap;
+}
+
+.fluxo-badge {
+    background-color: var(--laranja);
+    color: var(--branco);
+    font-size: 0.8rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    padding: 5px 12px;
+    border-radius: 6px;
+    letter-spacing: 0.5px;
+}
+
+.fluxo-header h3 {
+    font-size: 1.15rem;
+    font-weight: 700;
+    color: var(--preto);
+}
+
+.subtitulo-fluxo {
+    font-size: 1rem;
+    font-weight: 700;
+    color: var(--preto);
+    padding-left: 10px;
+    border-left: 3px solid var(--laranja);
+}
+
+.texto-intro-fluxo,
+.texto-complemento {
+    font-size: 0.95rem;
+    color: var(--cinza-texto);
+}
+
+.texto-alerta-inline {
+    font-size: 0.94rem;
+    font-weight: 600;
+    color: var(--vermelho-detalhe);
+}
+
+/* Lista numerada personalizada */
+.lista-passos {
+    list-style: none;
+    counter-reset: passo-counter;
+}
+
+.lista-passos li {
+    counter-increment: passo-counter;
+    position: relative;
+    padding-left: 40px;
+    margin-bottom: 16px;
+    font-size: 0.96rem;
+    color: var(--preto-suave);
+}
+
+.lista-passos li:last-child {
+    margin-bottom: 0;
+}
+
+.lista-passos li::before {
+    content: counter(passo-counter);
+    position: absolute;
+    left: 0;
+    top: 1px;
+    width: 26px;
+    height: 26px;
+    background-color: var(--preto);
+    color: var(--branco);
+    font-size: 0.82rem;
+    font-weight: 700;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.lista-passos li.passo-alerta::before {
+    background-color: var(--vermelho-detalhe);
+}
+
+.lista-passos li.passo-alerta strong {
+    color: var(--vermelho-detalhe);
+}
+
+/* Nota de Segurança */
+.nota-seguranca {
+    margin-top: 22px;
+    padding: 16px 20px;
+    background-color: var(--vermelho-fundo);
+    border-left: 4px solid var(--vermelho-detalhe);
+    border-radius: 6px;
+    font-size: 0.92rem;
+    color: var(--preto-suave);
+}
+
+.nota-seguranca strong {
+    color: var(--vermelho-detalhe);
+}
+
+/* --- TABELA DE RISCOS --- */
+.tabela-wrapper {
+    width: 100%;
+    overflow-x: auto;
+    border-radius: 12px;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.05);
+    border: 1px solid var(--cinza-borda);
+    background-color: var(--branco);
+}
+
+.tabela-riscos {
+    width: 100%;
+    border-collapse: collapse;
+    text-align: left;
+    min-width: 650px;
+}
+
+.tabela-riscos thead {
+    background-color: var(--preto);
+    color: var(--branco);
+    border-bottom: 4px solid var(--laranja);
+}
+
+.tabela-riscos th {
+    padding: 16px 22px;
+    font-size: 0.88rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.8px;
+}
+
+.tabela-riscos tbody tr {
+    border-bottom: 1px solid var(--cinza-borda);
+    transition: background-color 0.2s;
+}
+
+.tabela-riscos tbody tr:last-child {
+    border-bottom: none;
+}
+
+.tabela-riscos tbody tr:hover {
+    background-color: var(--laranja-claro);
+}
+
+.tabela-riscos td {
+    padding: 16px 22px;
+    font-size: 0.94rem;
+    color: var(--preto-suave);
+    vertical-align: middle;
+}
+
+.badge-risco {
+    display: inline-block;
+    background-color: var(--vermelho-fundo);
+    color: var(--vermelho-detalhe);
+    border-left: 3px solid var(--vermelho-detalhe);
+    padding: 5px 12px;
+    border-radius: 5px;
+    font-weight: 700;
+    font-size: 0.88rem;
+}
+
+.tabela-riscos td:last-child::before {
+    content: "▪";
+    color: var(--laranja);
+    font-size: 1.1rem;
+    margin-right: 8px;
+}
+
+/* =========================================================
+   ESTILOS DE ALTO DESTAQUE — SEÇÃO FLUXOGRAMAS
+   Paleta: Preto, Laranja, Vermelho, Branco e Cinza
+   ========================================================= */
+
+.secao-fluxogramas-destaque {
+    margin-top: 60px;
+    background-color: var(--preto);
+    padding: 45px 38px;
+    border-radius: 18px;
+    border-top: 6px solid var(--laranja);
+    border-bottom: 6px solid var(--vermelho-detalhe);
+    box-shadow: 0 18px 45px rgba(0, 0, 0, 0.25);
+}
+
+/* Banner Principal da Seção */
+.fluxograma-banner-principal {
+    background: linear-gradient(135deg, #1f1f1f 0%, #141414 100%);
+    border: 2px solid var(--laranja);
+    border-radius: 14px;
+    padding: 32px 28px;
+    text-align: center;
+    box-shadow: 0 8px 24px rgba(255, 107, 0, 0.18);
+}
+
+.badge-material-visual {
+    display: inline-block;
+    background-color: var(--vermelho-detalhe);
+    color: var(--branco);
+    font-size: 0.78rem;
+    font-weight: 800;
+    text-transform: uppercase;
+    letter-spacing: 1.2px;
+    padding: 6px 16px;
+    border-radius: 30px;
+    margin-bottom: 14px;
+}
+
+.fluxograma-banner-principal h2 {
+    color: var(--branco);
+    font-size: 1.75rem;
+    font-weight: 800;
+    line-height: 1.3;
+    margin-bottom: 10px;
+}
+
+.subtitulo-banner-fluxo {
+    color: #d4d4d8;
+    font-size: 0.95rem;
+    max-width: 760px;
+    margin: 0 auto;
+}
+
+/* Card de cada Fluxo */
+.bloco-fluxograma {
+    background-color: var(--branco);
+    border-radius: 14px;
+    padding: 32px;
+    border-left: 8px solid var(--laranja);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+}
+
+.fluxograma-titulo-barra {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    padding-bottom: 16px;
+    border-bottom: 2px solid var(--cinza-borda);
+    flex-wrap: wrap;
+}
+
+.numero-fluxo {
+    background-color: var(--preto);
+    color: var(--laranja);
+    border: 2px solid var(--laranja);
+    font-size: 0.85rem;
+    font-weight: 800;
+    padding: 5px 14px;
+    border-radius: 6px;
+    letter-spacing: 0.8px;
+}
+
+.fluxograma-titulo-barra h3 {
+    color: var(--preto);
+    font-size: 1.25rem;
+    font-weight: 800;
+    text-transform: uppercase;
+}
+
+/* Caixa de Etapa (Cinza Claro + Borda Escura) */
+.caixa-etapa {
+    background-color: #f0f0f3;
+    color: var(--preto);
+    border: 2px solid #d4d4d8;
+    border-radius: 10px;
+    padding: 18px 24px;
+    text-align: center;
+    font-weight: 700;
+    font-size: 0.96rem;
+    letter-spacing: 0.3px;
+}
+
+/* Caixa de Classificação (Preto + Texto Branco + Destaque Laranja) */
+.caixa-classificacao {
+    background-color: var(--preto);
+    color: var(--branco);
+    border: 2px solid var(--laranja);
+    border-radius: 10px;
+    padding: 18px 24px;
+    text-align: center;
+    font-weight: 700;
+    font-size: 0.95rem;
+    line-height: 1.6;
+}
+
+/* Setas verticais entre etapas */
+.seta-fluxo {
+    text-align: center;
+    font-size: 1.6rem;
+    font-weight: 900;
+    color: var(--laranja);
+    margin: 12px 0;
+    line-height: 1;
+}
+
+/* Caixa de Pergunta / Decisão (Laranja Vibrante) */
+.caixa-decisao {
+    background-color: var(--laranja);
+    color: var(--branco);
+    border-radius: 10px;
+    padding: 16px 24px;
+    text-align: center;
+    font-weight: 800;
+    font-size: 1rem;
+    letter-spacing: 0.5px;
+    box-shadow: 0 4px 14px rgba(255, 107, 0, 0.35);
+}
+
+/* Tabelas de Condição / Ação */
+.tabela-fluxograma {
+    width: 100%;
+    border-collapse: separate;
+    border-spacing: 0 10px;
+}
+
+.tabela-fluxograma tr {
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+}
+
+.tabela-fluxograma td.col-condicao {
+    width: 28%;
+    background-color: var(--preto-suave);
+    color: var(--branco);
+    font-weight: 700;
+    font-size: 0.88rem;
+    padding: 16px 18px;
+    border-left: 5px solid var(--laranja);
+    border-radius: 8px 0 0 8px;
+    vertical-align: middle;
+}
+
+.tabela-fluxograma td.col-acao {
+    width: 72%;
+    background-color: #f4f4f6;
+    color: var(--preto);
+    font-size: 0.95rem;
+    font-weight: 500;
+    padding: 16px 20px;
+    border: 1px solid var(--cinza-borda);
+    border-left: none;
+    border-radius: 0 8px 8px 0;
+    vertical-align: middle;
+    line-height: 1.55;
+}
+
+/* Caixa de Regra / Alerta (Vermelho) */
+.caixa-regra-alerta {
+    background-color: var(--vermelho-fundo);
+    color: var(--preto);
+    border: 1px solid #f5c2c2;
+    border-left: 6px solid var(--vermelho-detalhe);
+    border-radius: 8px;
+    padding: 16px 20px;
+    font-size: 0.94rem;
+    line-height: 1.55;
+}
+
+.caixa-regra-alerta strong {
+    color: var(--vermelho-detalhe);
+    font-weight: 800;
+    text-transform: uppercase;
+}
+
+.nota-documento-interno {
+    text-align: center;
+    color: var(--cinza-texto);
+    font-size: 0.88rem;
+    font-weight: 600;
+}
+
+/* --- RODAPÉ --- */
+footer {
+    background-color: var(--preto);
+    color: var(--branco);
+    border-top: 4px solid var(--laranja);
+    padding: 50px 5% 24px;
+}
+
+.footer-container {
+    max-width: 1120px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 40px;
+    padding-bottom: 30px;
+    border-bottom: 1px solid #2e2e2e;
+}
+
+.footer-links,
+.footer-contato {
+    flex: 1;
+    min-width: 260px;
+}
+
+footer h3 {
+    color: var(--laranja);
+    font-size: 1.1rem;
+    margin-bottom: 16px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.footer-links {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.footer-links a {
+    color: #cccccc;
+    text-decoration: none;
+    font-size: 0.9rem;
+    width: fit-content;
+    transition: color 0.2s;
+}
+
+.footer-links a:hover {
+    color: var(--laranja);
+}
+
+.footer-contato p {
+    font-size: 0.9rem;
+    color: #cccccc;
+    margin-bottom: 10px;
+}
+
+.icone-detalhe {
+    color: var(--vermelho-detalhe);
+    margin-right: 6px;
+}
+
+.footer-copy {
+    text-align: center;
+    padding-top: 20px;
+    font-size: 0.85rem;
+    color: #888888;
+}
+
+/* --- RESPONSIVIDADE --- */
+@media (max-width: 768px) {
+    .grid-duplo {
+        grid-template-columns: 1fr;
+    }
+
+    .cabecalho-documento {
+        padding: 26px 24px;
+    }
+
+    .cabecalho-documento h1 {
+        font-size: 1.6rem;
+    }
+
+    nav {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .secao-fluxogramas-destaque {
+        padding: 25px 16px;
+    }
+
+    .bloco-fluxograma {
+        padding: 22px 18px;
+    }
+
+    .tabela-fluxograma,
+    .tabela-fluxograma tbody,
+    .tabela-fluxograma tr,
+    .tabela-fluxograma td {
+        display: block;
+        width: 100% !important;
+    }
+
+    .tabela-fluxograma td.col-condicao {
+        border-radius: 8px 8px 0 0;
+    }
+
+    .tabela-fluxograma td.col-acao {
+        border-radius: 0 0 8px 8px;
+        border-left: 1px solid var(--cinza-borda);
+        margin-bottom: 12px;
+    }
+}
